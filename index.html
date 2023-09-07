@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API Integration </title>
+</head>
+<body>
+
+    <section>
+        <h1> WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY</h1>
+        <div class="centerDiv">
+            <label for="ENTER YOUR NAME">ENTER YOUR NAME</label> <br>
+            <input type="text" name="" id="nameid">
+        </div>
+
+        <div class="imgDiv">
+            <img src="image1.jpg" width="200px" height="200px" class="imgclass">
+        </div>
+
+        <button> Click Me </button>
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js" integrity="sha512-nDf/JmbKrXtC7NfuMoUJPoUCqV57cMTae3cTHko8QChe+UlvfPKE05BHXBHtezGdM0Oq2u7ynYwDWK9r67Uyeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                const name = $('#nameid').val();
+                alert(name);
+                $('.imgclass').attr('src', `https://joesch.moe/api/v1/${name}`);
+            });
+        });
+    </script>
+</body>
+</html>
