@@ -1,0 +1,47 @@
+*{margin: 0%; padding: 0%; box-sizing: border-box;}
+
+section{
+    width: 100%;
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+section h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 100px 0px;
+    color: #fff;
+}
+
+.centerDiv{
+    position: absolute;
+    top: 30%;
+    right: 45%;
+    color: #fff;
+}
+
+.centerDiv label{
+    text-align: center;
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.imgDiv{
+    position: absolute;
+    top: 40%;
+    right: 44%;
+}
+
+button{
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    padding: 10px 5px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background: black;
+}
